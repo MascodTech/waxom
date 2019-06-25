@@ -602,16 +602,29 @@ section:nth-of-type(even) {
 
 /* posts */
 
+.posts-title-block {
+    margin: 0 auto;
+}
+
 .posts-title {
     text-align: center;
+    color: #555555;
 }
 
 .posts-subtitle {
     text-align: center;
+    line-height: 2;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.posts-item {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 25px;
 }
 
 .post-item-img {
-    width: 370px;
+    width: 368px;
     height: 220px;
     overflow: hidden;
     position: relative;
@@ -624,8 +637,113 @@ section:nth-of-type(even) {
     transform: translateX(-50%);
 }
 
-.post-item-img img:nth-child(3) {
+.posts-item-col:nth-child(3) img{
     bottom: -80px;
 }
 
+.posts-item-title {
+    font-size: 20px;
+    padding: 25px 25px 0 25px;
+}
+
+.posts-item-subtitle {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    padding: 0 25px;
+}
+
+.posts-item-link {
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.posts-item-link::after {
+    content: '';
+    background: url('../img/icons/arrow-link.png') no-repeat;
+    background-size: 100%;
+    display: block;
+    width: 5px;
+    height: 8px;
+    margin-left: 10px;
+}
+
 /* posts end */
+
+/* logo */
+
+.logo-section {
+    background: url('../img/logo-bg.jpg') no-repeat center / cover fixed;
+    position: relative;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.logo-section::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.logo .row {
+    align-items: center;
+}
+
+.logo-item img {
+    width: 50%;
+}
+
+/* logo end */
+
+/* footer */
+
+.footer {
+    padding-top: 80px;
+    background: #191919;
+}
+
+.footer h3 {
+    color:  #ffffff;
+}
+
+.footer-logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 34px;
+    display: flex;
+    color: #ffffff;
+}
+
+.footer-logo img {
+    display: block;
+    width: 64px;
+}
+
+.copyright {
+    background: #111111;
+    margin-top: 80px;
+}
+
+.copyright p {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.copyright .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.copyright-block {
+    display: flex;
+}
+
+/* footer end */
